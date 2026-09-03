@@ -1,5 +1,6 @@
 # Open-Source-Contributions
 1. Contributed a merged fix to Keras (Google's deep-learning framework, 63k+ ★): corrected 11 public-API docstrings across 8 files that documented parameters absent from their function signatures, found by scripting an AST-based audit of the codebase. (https://github.com/keras-team/keras/pull/23505)
 2. Contributed a merged concurrency fix to ByteDance's DeerFlow (81k+ ★ AI agent framework): identified and fixed three garbage-collectable asyncio tasks whose loss left pending guards permanently set, silently disabling the browser live-view stream; shipped with parametrized regression tests (red-on-main, green-on-branch) validated against the full 13,700-test backend suite. (https://github.com/bytedance/deer-flow/pull/5155)
-3. Merged fix to agentic-workstation's CONTRIBUTING guide(https://github.com/ulises-jeremias/agentic-workstation/issues/112)
-4. Open (Ready to Merge) Requests in Spotify and Konia (Available on Profile)
+3. Contributed a merged API-correctness fix to kornia (11k+ ★ differentiable computer-vision library for PyTorch): identified and removed five documented-but-nonexistent parameters across three modules that raised TypeError when users followed the published docs, found by scripting an AST audit that diffed every Args: docstring against its real signature; validated against the project's full 36-job cross-platform CI matrix. (https://github.com/kornia/kornia/pull/3994)
+4. Merged fix to agentic-workstation's CONTRIBUTING guide(https://github.com/ulises-jeremias/agentic-workstation/issues/112)
+5. Open (Ready to Merge) Requests in Spotify, Huggingface and Langchain  (Available on Profile)
